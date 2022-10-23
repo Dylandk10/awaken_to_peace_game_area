@@ -1,0 +1,25 @@
+{
+  "name": "game-area",
+  "version": "1.0.0",
+  "description": "The game area for awaken to pace",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix client/awaken-to-peace",
+    "server": "node index.js",
+    "heroku-postbuild": "cd client/awaken-to-peace && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "author": "Dylan Kelly",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}
