@@ -64,10 +64,10 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
-  app.use(express.static(path.join(__dirname, 'client/awaken-to-peace/build')));
+  app.use(express.static(path.join(__dirname, 'awaken_to_peace_game_area_frontend/build')));
 // Handle React routing, return all requests to React app
   app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'client/awaken-to-peace/build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'awaken_to_peace_game_area_frontend/build', 'index.html'));
   });
 }
 
