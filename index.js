@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { DatabaseHandler } from './DatabaseHandler.js';
+//import { DatabaseHandler } from './DatabaseHandler.js';
 import gameRouter from './routes/gameRoute.js';
 
 
@@ -76,5 +76,5 @@ if (process.env.NODE_ENV === 'production') {
 
 app.listen(PORT, () => {
     console.log(`Running server on port ${PORT}`);
-    DatabaseHandler.startDatabase(process.env.MONGO_URL);
+    //DatabaseHandler.startDatabase(process.env.MONGO_URL);
 });
