@@ -7,9 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "client": "npm start --prefix client/awaken-to-peace",
+    "client": "npm start --prefix awaken_to_peace_game_area_frontend",
     "server": "node index.js",
-    "heroku-postbuild": "cd client/awaken-to-peace && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "heroku-postbuild": "cd awaken_to_peace_game_area_frontend && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "Dylan Kelly",
   "license": "ISC",
