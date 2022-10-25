@@ -9,7 +9,8 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm start --prefix awaken_to_peace_game_area_frontend",
     "server": "node index.js",
-    "heroku-postbuild": "cd awaken_to_peace_game_area_frontend && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "heroku-postbuild": "cd awaken_to_peace_game_area_frontend && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "start": "node index.js"
   },
   "author": "Dylan Kelly",
   "license": "ISC",
