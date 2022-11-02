@@ -127,7 +127,7 @@ export const QUOTES = [
     },
     {
         quote: "The bad news is time flies. The good news is your the pilot.",
-        author: "Michael altshuler",
+        author: "Michael Altshuler",
         option1: "",
         option2: "",
         option3: ""
